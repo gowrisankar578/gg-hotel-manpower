@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GG Hotel Manpower Service</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+    <img src="images/LOGO PNG.png" alt="GG Logo">
+    <span>GG Hotel Manpower</span>
+</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:+917708461771" class="call-btn">
+📞 Call Now
+</a>
+</nav>
+
+<header>
+    <div class="hero">
+        <h1>20+ Years of Trusted Hotel Staffing</h1>
+
+        <p>
+            Professional Hotel Manpower &
+            Catering Solutions Across Tamil Nadu
+        </p>
+
+        <a href="#contact" class="btn">
+            Get Staff Now
+        </a>
+    </div>
+</header>
+
+<section id="about">
+
+    <h2>Founder Profile</h2>
+
+    <div class="founder">
+
+        <img src="images/father.jpg.jpg" alt="Founder" class="founder-img">
+
+        <div class="founder-details">
+
+            <h3>Mr.M.Sekar</h3>
+
+            <p><strong>Founder & Managing Director</strong></p>
+
+            <p>
+                With over 20 years of experience in the manpower and hotelindustry,
+                he has successfully provided professional hotel manpower and
+                catering services to hotels, resorts, restaurants, marriage halls,
+                and event management companies across Tamil Nadu.
+            </p>
+
+            <p>
+                His dedication, reliability, and commitment to quality service
+                have helped GG Hotel Manpower Service earn the trust of numerous clients.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <h2>About Us</h2>
+
+    <p>
+        GG Hotel Manpower Service has been providing
+        professional manpower solutions for hotels,
+        resorts, restaurants and catering companies
+        for more than 20 years.
+    </p>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Hotel Staffing</h3>
+<p>Waiters, Stewards, Supervisors,Mastercooks</p>
+</div>
+
+<div class="card">
+<h3>Housekeeping</h3>
+<p>Professional Cleaning Staff</p>
+</div>
+
+<div class="card">
+<h3>Catering Staff</h3>
+<p>Wedding & Event Staff and Providing food services</p>
+</div>
+
+<div class="card">
+<h3>Emergency Staffing</h3>
+<p>Immediate Staff Deployment</p>
+</div>
+
+</div>
+
+</section>
+</section> <!-- Services End -->
+
+<section id="pricing">
+...
+</section>
+
+
+<section class="stats">
+
+<div>
+<h2>20+</h2>
+<p>Years Experience</p>
+</div>
+
+<div>
+<h2>500+</h2>
+<p>Staff Deployed</p>
+</div>
+
+<div>
+<h2>100+</h2>
+<p>Clients Served</p>
+</div>
+</section>
+
+<section id="location">
+
+<div class="location-card">
+
+<div class="location-icon">
+📍
+</div>
+
+<h2>Visit Our Office</h2>
+
+<h3>GG Hotel Manpower Service</h3>
+
+<p>
+Town Hall, Coimbatore<br>
+Tamil Nadu - 641001
+</p>
+
+<a href="https://maps.google.com" target="_blank" class="location-btn">
+View on Google Maps
+</a>
+
+</div>
+
+</section>
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="enquiryForm">
+
+<input type="text" id="hotel" placeholder="Hotel Name">
+
+<input type="text" id="person" placeholder="Contact Person">
+
+<input type="tel" id="phone" placeholder="Phone Number">
+
+<textarea id="requirement" placeholder="Your Requirement"></textarea>
+
+<button type="button" onclick="sendWhatsApp()">
+Submit
+</button>
+
+</form>
+
+<script>
+function sendWhatsApp(){
+
+let hotel =
+document.getElementById("hotel").value;
+
+let person =
+document.getElementById("person").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let requirement =
+document.getElementById("requirement").value;
+
+let message =
+`Hotel Name: ${hotel}
+Contact Person: ${person}
+Phone: ${phone}
+Requirement: ${requirement}`;
+
+window.open(
+`https://wa.me/917708461771?text=${encodeURIComponent(message)}`
+);
+
+}
+</script>
+
+</section>
+
+<a href="https://wa.me/917708461771" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+<footer>
+    <p>© 2026 GG Hotel Manpower Service | Trusted Hospitality Staffing Since 2005</p>
+</footer>
+
+</body>
+</html>
